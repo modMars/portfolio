@@ -3,16 +3,66 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Trykker&display=swap');
+		</style>
+		<script src="https://kit.fontawesome.com/d57f01c9bf.js" crossorigin="anonymous"></script>
 		<title>Alejandro Salcido</title>
 	</head>
 	<body>
 		<nav>
-			<h1>Alejandro Salcido</h1>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
+			<h1 class="nav__logo">&lt;/AS></h1>
+			<ul class="nav__menu">
+				<li><a href="#landing">Home</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#about">About me</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
+		<main>
+			<section class="main__landing" id="landing">
+				<div class="main__hero-wrapper"><p class="text">>Alejandro Salcido</p></div>
+				<p class="main__landing">Programming the web.</p>
+			</section>
+			<section class="main__about" id="about">
+				<h2>About me</h2>
+				<p>
+					<b>Web Developer</b> located in Ciudad Juárez, Chihuahua.<br />
+					Passionate about programming, electronics, virtual reality and even cooking!
+				</p>
+			</section>
+			<section class="main__projects" id="projects">
+				<h2>Projects</h2>
+				<div class="main__projects-display">
+					<div class="card">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, provident ad magni fugit, alias ab iste
+						corporis hic officiis aliquam veniam temporibus, unde incidunt. Fugiat perferendis repellendus iste
+						dignissimos quod.
+					</div>
+				</div>
+			</section>
+			<section class="main__contact" id="contact">
+				<h2>Let's get in touch!</h2>
+				<form action="https://api.web3forms.com/submit" method="POST" id="form">
+					<input type="hidden" name="access_key" value="9abc3ac6-5e87-4e35-9636-8e75a411c7b4" />
+					<input type="hidden" name="from_name" value="Portfolio contact" />
+					<input type="checkbox" name="botcheck" id="" style="display: none" />
+					<label for="name">Name</label>
+					<input type="text" name="name" required />
+					<label for="email">E-mail</label>
+					<input type="email" name="email" required />
+					<label for="message">Message</label>
+					<textarea name="message" required></textarea>
+					<div class="h-captcha" data-captcha="true"></div>
+					<button type="submit">Submit</button>
+					<div id="result" class="disabled">
+						<p id="popup-message"></p>
+						<i class="fa-solid fa-circle-check" id="status-icon"></i>
+					</div>
+				</form>
+				<script src="https://web3forms.com/client/script.js" async defer></script>
+			</section>
+		</main>
+		<footer>Github copyright c</footer>
 	</body>
 </html>

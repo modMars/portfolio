@@ -1,0 +1,174 @@
+:root {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	--bg: #303747;
+	--fg: #e1e7f3;
+	--acc: #b5d3f6;
+}
+
+html {
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--bg);
+	color: var(--fg);
+}
+
+nav {
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1rem;
+	top: 0;
+}
+
+.nav__logo {
+	font-family: 'Cormorant Infant', serif;
+	font-size: 2em;
+	letter-spacing: -0.5px;
+	margin: 0;
+	padding: 10px;
+}
+
+.nav__menu {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 10px;
+	font-family: 'Trykker', serif;
+	font-size: 1rem;
+}
+
+.nav__menu > li {
+	padding: 10px 10px;
+	font-size: 1.25em;
+	color: var(--fg);
+}
+
+.nav__menu > li:hover {
+	background-color: green;
+}
+
+.nav__menu > li > a {
+	color: inherit;
+}
+
+main {
+	min-height: 100vh;
+	color: var(--fg);
+}
+
+.main__hero-wrapper {
+	display: inline-block;
+}
+
+.text {
+	color: var(--fg);
+	font-size: 3.8em;
+	letter-spacing: 10px;
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+	font-weight: 400;
+	border-right: 5px solid;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typing 2s steps(18), cursor 0.4s step-end infinite alternate;
+}
+
+.text::first-letter {
+	color: var(--acc);
+}
+
+@keyframes cursor {
+	50% {
+		border-color: transparent;
+	}
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+
+.main__landing {
+	background: var(--bg);
+	background-size: cover;
+	background-position: center;
+}
+
+.main__landing > p {
+	margin: 0;
+	font-size: 1.25rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+}
+
+#result {
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2em;
+	max-width: 30em;
+	min-height: 5em;
+	border-radius: 10px;
+	background: var(--fg);
+	color: var(--bg);
+	transition: opacity 0.5s ease-out;
+	box-shadow: 13px 12px 24px 4px rgba(0, 0, 0, 0.67);
+	-webkit-box-shadow: 13px 12px 24px 4px rgba(0, 0, 0, 0.67);
+	-moz-box-shadow: 13px 12px 24px 4px rgba(0, 0, 0, 0.67);
+}
+
+#popup-message {
+	font-family: monospace;
+	font-size: 1.5em;
+	line-height: 1.3;
+	letter-spacing: 1px;
+}
+
+.fa-circle-check {
+	color: #24b351;
+}
+
+.fa-circle-exclamation {
+	color: #c21616;
+}
+
+#status-icon {
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	font-size: 1.25em;
+	transform: translate(-50%, 50%);
+}
+
+.disabled {
+	opacity: 0;
+	display: none;
+}
+
+.enabled {
+	opacity: 1;
+	display: flex;
+}
