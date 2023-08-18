@@ -4,45 +4,76 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Trykker&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 		</style>
 		<script src="https://kit.fontawesome.com/d57f01c9bf.js" crossorigin="anonymous"></script>
 		<title>Alejandro Salcido</title>
 	</head>
 	<body>
 		<nav>
-			<h1 class="nav__logo">&lt;/AS></h1>
+			<h1 class="nav__logo">&lt;/as></h1>
+			<a href="#" class="nav__menu-hamburger"><i class="fa-solid fa-bars"></i></a>
 			<ul class="nav__menu">
 				<li><a href="#landing">Home</a></li>
-				<li><a href="#projects">Projects</a></li>
 				<li><a href="#about">About me</a></li>
+				<li><a href="#projects">Projects</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 		<main>
 			<section class="main__landing" id="landing">
-				<div class="main__hero-wrapper"><p class="text">>Alejandro Salcido</p></div>
-				<p class="main__landing">Programming the web.</p>
+				<div class="main__hero-wrapper">
+					<p class="hero-text">>Alejandro Salcido</p>
+					<p class="hero-subtext">Programming the web with elegant solutions</p>
+				</div>
 			</section>
 			<section class="main__about" id="about">
-				<h2>About me</h2>
+				<h2 id="subheader">About me</h2>
 				<p>
 					<b>Web Developer</b> located in Ciudad Juárez, Chihuahua.<br />
 					Passionate about programming, electronics, virtual reality and even cooking!
 				</p>
+				<div class="main__about-img">
+					<img src="./assets/bg.jpg" alt="" id="portrait" />
+					<svg id="10015.io" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+						<defs>
+							<pattern
+								id="svg-pattern"
+								x="0"
+								y="0"
+								width="48"
+								height="48"
+								patternUnits="userSpaceOnUse"
+								patternTransform="translate(30, 30) rotate(0) skewX(0)"
+							>
+								<svg width="18" height="18" viewBox="0 0 100 100">
+									<g fill="#303747" opacity="1">
+										<path
+											d="M17.3113 0L0.595015 16.4187L33.4325 49.8513L0 82.6887L16.4187 99.405L49.8513 66.5675L82.6887 100L99.405 83.5813L66.5675 50.1488L100 17.3113L83.5813 0.595015L50.1488 33.4325L17.3113 0Z"
+										></path>
+									</g>
+								</svg>
+							</pattern>
+						</defs>
+						<rect x="0" y="0" width="100%" height="100%" fill="rgba(255, 255, 255, 0)"></rect>
+						<rect x="0" y="0" width="100%" height="100%" fill="url(#svg-pattern)"></rect>
+					</svg>
+				</div>
 			</section>
 			<section class="main__projects" id="projects">
-				<h2>Projects</h2>
+				<h2 id="subheader">Projects</h2>
 				<div class="main__projects-display">
 					<div class="card">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, provident ad magni fugit, alias ab iste
-						corporis hic officiis aliquam veniam temporibus, unde incidunt. Fugiat perferendis repellendus iste
-						dignissimos quod.
+						<h3>Project Header</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe sed, quo quasi, ipsam illum sunt
+							itaque, enim atque labore dolor officia. Unde inventore, atque ex labore odio aperiam commodi.
+						</p>
 					</div>
 				</div>
 			</section>
 			<section class="main__contact" id="contact">
-				<h2>Let's get in touch!</h2>
+				<h2 id="subheader">Let's get in touch!</h2>
 				<form action="https://api.web3forms.com/submit" method="POST" id="form">
 					<input type="hidden" name="access_key" value="9abc3ac6-5e87-4e35-9636-8e75a411c7b4" />
 					<input type="hidden" name="from_name" value="Portfolio contact" />

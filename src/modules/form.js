@@ -21,12 +21,12 @@ form.addEventListener('submit', function (e) {
 		.then(async response => {
 			let json = await response.json()
 			if (response.status == 200) {
-				wrapper.className = 'enabled'
+				wrapper.style.display = 'flex'
 				statusIcon.className = 'fa-solid fa-circle-check'
 				result.textContent = json.message
 			} else {
 				console.log(response)
-				wrapper.className = 'enabled'
+				wrapper.style.display = 'flex'
 				statusIcon.className = 'fa-solid fa-circle-check'
 				result.textContent = json.message
 			}
@@ -39,7 +39,7 @@ form.addEventListener('submit', function (e) {
 		.then(function () {
 			form.reset()
 			setTimeout(() => {
-				wrapper.className = 'disabled'
+				wrapper.style.display = 'none'
 			}, 3000)
 		})
 })
