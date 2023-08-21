@@ -1,5 +1,4 @@
 import './assets/alex.png'
-import './assets/bg.jpg'
 import './modules/form.js'
 import './styles/normalize.css'
 import './styles/style.css'
@@ -24,3 +23,6 @@ document.querySelectorAll('nav li a').forEach(link => {
 		smoothScroll(target)
 	})
 })
+
+// const portraitImage = document.getElementById('portrait')
+// portraitImage.src = alexImage

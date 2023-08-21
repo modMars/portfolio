@@ -24,45 +24,41 @@
 			<section class="main__landing" id="landing">
 				<div class="main__hero-wrapper">
 					<p class="hero-text">>Alejandro Salcido</p>
-					<p class="hero-subtext">Programming the web with elegant solutions</p>
+					<p class="hero-subtext">Programming the web with elegant solutions.</p>
 				</div>
 			</section>
 			<section class="main__about" id="about">
-				<h2 id="subheader">About me</h2>
-				<p>
-					<b>Web Developer</b> located in Ciudad Juárez, Chihuahua.<br />
-					Passionate about programming, electronics, virtual reality and even cooking!
-				</p>
+				<div class="main__about-text">
+					<h2 id="subheader">About me</h2>
+					<p class="subtext">
+						Hello! 👋 I'm a Computer Engineering graduate and skilled Web Developer based in Chihuahua, Mexico.<br />
+						My expertise lies in creating user-friendly websites with a strong visual appeal. My passion for technology
+						drives my commitment to innovative web solutions. Beyond coding, I enjoy cooking, electronics and gaming,
+						which bring attention to detail and creativity to my work.<br /><br />
+						Let's collaborate to bring your digital ideas to reality!
+					</p>
+				</div>
 				<div class="main__about-img">
-					<img src="./assets/bg.jpg" alt="" id="portrait" />
-					<svg id="10015.io" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
-						<defs>
-							<pattern
-								id="svg-pattern"
-								x="0"
-								y="0"
-								width="48"
-								height="48"
-								patternUnits="userSpaceOnUse"
-								patternTransform="translate(30, 30) rotate(0) skewX(0)"
-							>
-								<svg width="18" height="18" viewBox="0 0 100 100">
-									<g fill="#303747" opacity="1">
-										<path
-											d="M17.3113 0L0.595015 16.4187L33.4325 49.8513L0 82.6887L16.4187 99.405L49.8513 66.5675L82.6887 100L99.405 83.5813L66.5675 50.1488L100 17.3113L83.5813 0.595015L50.1488 33.4325L17.3113 0Z"
-										></path>
-									</g>
-								</svg>
-							</pattern>
-						</defs>
-						<rect x="0" y="0" width="100%" height="100%" fill="rgba(255, 255, 255, 0)"></rect>
-						<rect x="0" y="0" width="100%" height="100%" fill="url(#svg-pattern)"></rect>
-					</svg>
+					<img src="./assets/alex.png" alt="" id="portrait" />
 				</div>
 			</section>
 			<section class="main__projects" id="projects">
 				<h2 id="subheader">Projects</h2>
 				<div class="main__projects-display">
+					<div class="card">
+						<h3>Project Header</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe sed, quo quasi, ipsam illum sunt
+							itaque, enim atque labore dolor officia. Unde inventore, atque ex labore odio aperiam commodi.
+						</p>
+					</div>
+					<div class="card">
+						<h3>Project Header</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe sed, quo quasi, ipsam illum sunt
+							itaque, enim atque labore dolor officia. Unde inventore, atque ex labore odio aperiam commodi.
+						</p>
+					</div>
 					<div class="card">
 						<h3>Project Header</h3>
 						<p>
@@ -78,13 +74,12 @@
 					<input type="hidden" name="access_key" value="9abc3ac6-5e87-4e35-9636-8e75a411c7b4" />
 					<input type="hidden" name="from_name" value="Portfolio contact" />
 					<input type="checkbox" name="botcheck" id="" style="display: none" />
-					<label for="name">Name</label>
-					<input type="text" name="name" required />
-					<label for="email">E-mail</label>
-					<input type="email" name="email" required />
-					<label for="message">Message</label>
-					<textarea name="message" required></textarea>
-					<div class="h-captcha" data-captcha="true"></div>
+					<!-- <label for="name">Name</label> -->
+					<input type="text" name="name" placeholder="Name" required />
+					<!-- <label for="email">E-mail</label> -->
+					<input type="email" name="email" placeholder="E-mail" required />
+					<!-- <label for="message">Message</label> -->
+					<textarea name="message" placeholder="Message" required></textarea>
 					<button type="submit">Submit</button>
 					<div id="result" class="disabled">
 						<p id="popup-message"></p>
