@@ -3,15 +3,13 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-		</style>
 		<script src="https://kit.fontawesome.com/d57f01c9bf.js" crossorigin="anonymous"></script>
 		<title>Alejandro Salcido</title>
 	</head>
 	<body>
-		<nav>
-			<h1 class="nav__logo">&lt;/as></h1>
+		<div class="main__landing-bg">
+		<header>
+			<h2 class="nav__logo">&lt;/as></h2>
 			<a href="#" class="nav__menu-hamburger"><i class="fa-solid fa-bars"></i></a>
 			<ul class="nav__menu">
 				<li><a href="#landing">Home</a></li>
@@ -19,54 +17,67 @@
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
-		</nav>
+		</header>
 		<main>
 			<section class="main__landing" id="landing">
 				<div class="main__hero-wrapper">
-					<p class="hero-text">>Alejandro Salcido</p>
-					<p class="hero-subtext">Programming the web with elegant solutions.</p>
-				</div>
-			</section>
-			<section class="main__about" id="about">
-				<div class="main__about-text">
-					<h2 id="subheader">About me</h2>
-					<p class="subtext">
-						Hello! 👋 I'm a Computer Engineering graduate and skilled Web Developer based in Chihuahua, Mexico.<br />
-						My expertise lies in creating user-friendly websites with a strong visual appeal. My passion for technology
+					<h1 class="hero-text">Hi, I'm <br><span id="Alejandro">Alejandro</span>.</h1>
+					<p class="hero-subtext">
+						Skilled Web Developer from Chihuahua, Mexico. I blend technology and creativity to craft stunning websites. Let's make your digital dreams a reality.
+						<!-- Computer Engineering graduate and skilled Web Developer based in Chihuahua, Mexico. My
+						expertise lies in creating user-friendly websites with a strong visual appeal. My passion for technology
 						drives my commitment to innovative web solutions. Beyond coding, I enjoy cooking, electronics and gaming,
 						which bring attention to detail and creativity to my work.<br /><br />
-						Let's collaborate to bring your digital ideas to reality!
+						Let's collaborate to bring your digital ideas to reality! -->
 					</p>
+					<div class="socials__container">
+						<a href="https://www.github.com/modMars"><i class="fa-brands fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/alejandrosalcido0/"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://twitter.com/mod_mars"><i class="fa-brands fa-twitter"></i></a>
+					</div>
+					<!-- <p class="hero-subtext">Programming the web with elegant solutions.</p> -->
 				</div>
-				<div class="main__about-img">
-					<img src="./assets/alex.png" alt="" id="portrait" />
-				</div>
+				<div class="landing__img-container"><img src="./assets/alex600.webp" alt="" id="portrait" /></div>
+				
+			</section>
+			<section class="main__about" id="about">
+				<h2 class="subheader">About me</h2>
+				<div class="main__about-text"></div>
+				<div class="main__about-img"></div>
 			</section>
 			<section class="main__projects" id="projects">
-				<h2 id="subheader">Projects</h2>
 				<div class="main__projects-display">
-					<div class="card">
-						<h3>Project Header</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe sed, quo quasi, ipsam illum sunt
-							itaque, enim atque labore dolor officia. Unde inventore, atque ex labore odio aperiam commodi.
-						</p>
+					<h2 id="subheader">Projects</h2>
+					<div class="card hidden">
+						<img src="./assets/library800.webp" alt="Picture of a library website" class="card__image">
+						<div class="card__info">
+							<h3>Project Header</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe sed, quo quasi, ipsam illum
+								sunt itaque, enim atque labore dolor officia. Unde inventore, atque ex labore odio aperiam commodi.
+							</p>
+						</div>
 					</div>
-					<div class="card">
-						<h3>Project Header</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe sed, quo quasi, ipsam illum sunt
-							itaque, enim atque labore dolor officia. Unde inventore, atque ex labore odio aperiam commodi.
-						</p>
+					<div class="card hidden">
+						<img src="./assets/weather800.webp" alt="Picture of a library website" class="card__image">
+						<div class="card__info">
+							<h3>Project Header</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe sed, quo quasi, ipsam illum
+								sunt itaque, enim atque labore dolor officia. Unde inventore, atque ex labore odio aperiam commodi.
+							</p>
+						</div>
 					</div>
-					<div class="card">
-						<h3>Project Header</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe sed, quo quasi, ipsam illum sunt
-							itaque, enim atque labore dolor officia. Unde inventore, atque ex labore odio aperiam commodi.
-						</p>
+					<div class="card hidden">
+						<img src="./assets/todo800.webp" alt="Picture of a library website" class="card__image">
+						<div class="card__info">
+							<h3>Project Header</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe sed, quo quasi, ipsam illum
+								sunt itaque, enim atque labore dolor officia. Unde inventore, atque ex labore odio aperiam commodi.
+							</p>
+						</div>
 					</div>
-				</div>
 			</section>
 			<section class="main__contact" id="contact">
 				<h2 id="subheader">Let's get in touch!</h2>
@@ -89,6 +100,7 @@
 				<script src="https://web3forms.com/client/script.js" async defer></script>
 			</section>
 		</main>
+	</div>
 		<footer>Github copyright c</footer>
 	</body>
 </html>

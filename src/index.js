@@ -1,10 +1,16 @@
-import './assets/alex.png'
+// import './assets/alex512.png'
+import './assets/alex600.webp'
+import './assets/library800.webp'
+import './assets/todo800.webp'
+import './assets/weather800.webp'
 import './modules/form.js'
+import './modules/scroll.js'
 import './styles/normalize.css'
 import './styles/style.css'
 
 const menu = document.querySelector('.fa-bars')
-menu.addEventListener('click', () => {
+menu.addEventListener('click', e => {
+	e.preventDefault()
 	const nav = document.querySelector('.nav__menu')
 	nav.classList.toggle('enabled')
 })
