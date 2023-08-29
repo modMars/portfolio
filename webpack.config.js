@@ -25,7 +25,7 @@ module.exports = {
 			},
 			{
 				//Add asset loading
-				test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+				test: /\.(png|svg|jpg|jpeg|gif|webp|pdf|txt)$/i,
 				type: 'asset/resource',
 			},
 			{

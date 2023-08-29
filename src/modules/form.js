@@ -1,5 +1,5 @@
 const form = document.getElementById('form')
-const wrapper = document.getElementById('result')
+const wrapper = document.getElementById('popup-container')
 const result = document.getElementById('popup-message')
 const statusIcon = document.getElementById('status-icon')
 

@@ -1,12 +1,13 @@
 const header = document.querySelector('header')
 const sectionOne = document.querySelector('.main__landing')
 const hidden = document.querySelectorAll('.hidden')
+const links = document.querySelectorAll('.nav__link')
 
 const sectionOneOptions = {
-	rootMargin: '-200px',
+	threshold: 0.9,
 }
 const hiddenOptions = {
-	threshold: 1.0,
+	threshold: 0.6,
 }
 
 const hiddenObserver = new IntersectionObserver((entries, hiddenObserver) => {
@@ -18,13 +19,15 @@ const hiddenObserver = new IntersectionObserver((entries, hiddenObserver) => {
 }, hiddenOptions)
 
 const sectionOneObserver = new IntersectionObserver((entries, sectionOneObserver) => {
-	entries.forEach(entry => {
-		if (!entry.isIntersecting) {
-			header.classList.add('solid-bg')
-		} else {
-			header.classList.remove('solid-bg')
-		}
-	})
+	if (window.innerWidth > 1011) {
+		entries.forEach(entry => {
+			if (!entry.isIntersecting) {
+				header.classList.add('solid-bg')
+			} else {
+				header.classList.remove('solid-bg')
+			}
+		})
+	}
 }, sectionOneOptions)
 
 sectionOneObserver.observe(sectionOne)
