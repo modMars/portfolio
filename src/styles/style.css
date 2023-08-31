@@ -32,9 +32,18 @@
 	list-style: none;
 }
 
-.accent {
-	font-family: var(--subheader);
+html {
+	background-color: black;
+}
+
+.dot {
 	color: var(--acc);
+	font-family: var(--subheader);
+}
+
+.accent {
+	color: var(--acc);
+	font-weight: bold;
 }
 
 .symbol {
@@ -54,13 +63,13 @@ a {
 	align-self: center;
 }
 
-.body-wrapper {
+/* .body-wrapper {
 	width: 100%;
 	max-width: 3840px;
 	margin: auto;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
-}
+} */
 
 .container::-webkit-scrollbar {
 	display: none; /* Safari and Chrome */
@@ -78,7 +87,7 @@ header {
 	position: sticky;
 	font-size: var(--f400);
 	top: 0;
-	z-index: 1;
+	z-index: 100;
 	transition: background-color opacity 0.25s;
 }
 
@@ -124,12 +133,12 @@ p {
 
 .hidden {
 	opacity: 0;
-	transform: translatey(-10px);
-	transition: all 0.2s;
+	transform: translatey(-30%);
+	transition: all 0.6s;
 }
 
 .shown {
-	transform: translatey(0);
+	transform: translatey(0%);
 	opacity: 1;
 }
 
@@ -228,23 +237,30 @@ p {
 
 .nav__link {
 	color: var(--fg);
-
 	letter-spacing: 1.5px;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*-Landing styles*/
 .main__landing-bg {
-	aspect-ratio: 900/600;
+	position: relative;
+	height: 100%;
+	z-index: -1;
+}
+/*Use img pseudoelement to apply a background to .main__landing-bg (wrapper)*/
+.main__landing-bg > img {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	background-image: url(../assets/bg.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	height: 110svh;
+	object-fit: cover;
+	filter: blur(5px);
 }
 
 main {
 	min-height: 100vh;
+	min-height: 100svh;
 	color: var(--fg);
 }
 
@@ -272,22 +288,24 @@ main {
 	letter-spacing: 5px;
 	line-height: 1.2;
 	margin: 0.5em 0em;
-	animation: popup-anim 0.5s ease 0.2s 1 forwards;
+	animation: popup-anim 0.5s ease 0.5s 1 forwards;
 }
 
 #Alejandro {
-	/* color: var(--acc); */
+	color: var(--acc);
 	font-style: italic;
 	letter-spacing: -1px;
 }
 
 .main__landing {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
 	flex-direction: row;
 	background-position: center;
 	padding: 0;
+	min-height: 98vh;
 	min-height: 98svh;
 }
 
@@ -300,7 +318,7 @@ main {
 	font-size: calc(var(--f400) + 0.25rem);
 	width: 100%;
 	font-weight: 500;
-	animation: popup-anim 1s ease 1s 1 forwards;
+	animation: popup-anim 1s ease 1.2s 1 forwards;
 }
 
 .hero__interactables {
@@ -326,19 +344,19 @@ main {
 
 .socials__container a:nth-child(1) {
 	opacity: 0;
-	animation: popup-anim 0.4s ease 1.2s 1 forwards;
+	animation: popup-anim 0.4s ease 1.3s 1 forwards;
 }
 .socials__container a:nth-child(2) {
 	opacity: 0;
-	animation: popup-anim 0.4s ease 1.3s 1 forwards;
+	animation: popup-anim 0.4s ease 1.4s 1 forwards;
 }
 .socials__container a:nth-child(3) {
 	opacity: 0;
-	animation: popup-anim 0.4s ease 1.4s 1 forwards;
+	animation: popup-anim 0.4s ease 1.5s 1 forwards;
 }
 .socials__container a:nth-child(4) {
 	opacity: 0;
-	animation: popup-anim 0.4s ease 1.5s 1 forwards;
+	animation: popup-anim 0.4s ease 1.6s 1 forwards;
 }
 
 .cv > svg {
@@ -356,15 +374,17 @@ main {
 
 .landing__img-container {
 	padding: 3rem;
-	margin-bottom: 4rem;
+	margin-bottom: 5rem;
 	border-radius: 380px;
+	opacity: 0;
+	animation: popup-anim 0.7s ease 1.8s 1 forwards;
 }
 
 #portrait {
 	width: 100%;
 	min-width: 200px;
 	max-width: 500px;
-	box-shadow: 0px 0px 30px var(--acc);
+	box-shadow: 0px 0px 10px var(--fg);
 	border-radius: 360px;
 	padding-left: 1px;
 }
@@ -375,6 +395,7 @@ main {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	min-height: 80vh;
 	min-height: 80svh;
 	background-color: var(--bg2);
 }
@@ -387,7 +408,7 @@ main {
 	color: var(--fg);
 }
 .about__header {
-	margin-bottom: 1.25rem;
+	margin-bottom: 2rem;
 }
 /* .main__about-beyond {
 	background-image: url(../assets/blob.svg);
@@ -443,6 +464,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	background-color: var(--bg3);
+	min-height: 80vh;
 	min-height: 80svh;
 }
 
@@ -590,7 +612,8 @@ main {
 	display: inline-block;
 	border-radius: 3px;
 	border-radius: 14px;
-	background: var(--bglight);
+	color: var(--fg2);
+	background: var(--bg3);
 	font-weight: 600;
 	font-size: 0.8em;
 	opacity: 0.65;
@@ -599,7 +622,7 @@ main {
 	transition: filter 0.3s;
 }
 
-#js {
+/* #js {
 	color: #f0db4f;
 }
 
@@ -617,7 +640,7 @@ main {
 
 #npm {
 	color: #cc3534;
-}
+} */
 
 /*-Contact*/
 .main__contact {
