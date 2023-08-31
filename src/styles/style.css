@@ -133,8 +133,8 @@ p {
 
 .hidden {
 	opacity: 0;
-	transform: translatey(-30%);
-	transition: all 0.6s;
+	transform: translatey(30%);
+	transition: all 1s;
 }
 
 .shown {
