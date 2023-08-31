@@ -1,7 +1,7 @@
 const form = document.getElementById('form')
-const wrapper = document.getElementById('popup-container')
-const result = document.getElementById('popup-message')
-const statusIcon = document.getElementById('status-icon')
+const wrapper = document.querySelector('.popup-wrapper')
+const result = document.querySelector('.popup-message')
+const statusIcon = document.querySelector('.status-icon')
 
 form.addEventListener('submit', function (e) {
 	e.preventDefault()
@@ -21,25 +21,25 @@ form.addEventListener('submit', function (e) {
 		.then(async response => {
 			let json = await response.json()
 			if (response.status == 200) {
-				wrapper.style.display = 'flex'
-				statusIcon.className = 'fa-solid fa-circle-check'
+				statusIcon.className = 'fa-solid fa-circle-check status-icon'
 				result.textContent = json.message
+				wrapper.className = 'popup-wrapper open'
 			} else {
-				console.log(response)
-				wrapper.style.display = 'flex'
-				statusIcon.className = 'fa-solid fa-circle-check'
+				wrapper.className = 'popup-wrapper closed'
+				statusIcon.className = 'fa-solid fa-circle-check status-icon'
 				result.textContent = json.message
 			}
 		})
 		.catch(error => {
 			console.log(error)
 			result.textContent = 'Oops! Something went wrong.'
-			statusIcon.className = 'fa-solid fa-circle-exclamation'
+			statusIcon.className = 'fa-solid fa-circle-check status-icon'
+			wrapper.className = 'popup-wrapper closed'
 		})
 		.then(function () {
 			form.reset()
 			setTimeout(() => {
-				wrapper.style.display = 'none'
+				wrapper.className = 'popup-wrapper closed'
 			}, 3000)
 		})
 })

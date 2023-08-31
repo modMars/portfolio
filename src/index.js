@@ -4,7 +4,6 @@ import './assets/alex600.webp'
 import './assets/calculator800.webp'
 import './assets/cv.svg'
 import './assets/library800.webp'
-import './assets/nav-bg.svg'
 import './assets/todo800.webp'
 import './assets/weather800.webp'
 import './modules/form.js'
@@ -13,7 +12,7 @@ import './styles/animations.css'
 import './styles/normalize.css'
 import './styles/style.css'
 
-const menu = document.querySelector('.nav__menu-hamburger')
+const menu = document.querySelector('.fa-bars')
 const navMenu = document.querySelector('.nav__menu')
 menu.addEventListener('click', e => {
 	e.preventDefault()
@@ -21,8 +20,17 @@ menu.addEventListener('click', e => {
 		navMenu.classList.remove('enabled')
 		navMenu.classList.add('closed')
 	} else {
-		navMenu.classList.remove('closed')
 		navMenu.classList.add('enabled')
+		navMenu.classList.remove('closed')
+	}
+})
+
+document.addEventListener('click', e => {
+	if (e.target !== navMenu && e.target !== menu) {
+		if (navMenu.classList.contains('enabled')) {
+			navMenu.classList.remove('enabled')
+			navMenu.classList.add('closed')
+		}
 	}
 })
 
@@ -44,15 +52,6 @@ document.querySelectorAll('.nav__link').forEach(link => {
 		const target = event.target.getAttribute('href')
 		smoothScroll(target)
 	})
-})
-
-document.addEventListener('click', e => {
-	if (e.target !== navMenu && e.target !== menu) {
-		if (navMenu.classList.contains('enabled')) {
-			navMenu.classList.remove('enabled')
-			navMenu.classList.add('closed')
-		}
-	}
 })
 
 const cvBtn = document.querySelector('.cv')

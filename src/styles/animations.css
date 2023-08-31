@@ -1,20 +1,54 @@
-@keyframes hamburguesita-open {
+@keyframes nav-open {
 	0% {
+		opacity: 1;
+		visibility: hidden;
 		transform: translateX(200%);
 	}
 
 	100% {
+		opacity: 1;
+		visibility: visible;
 		transform: translateX(0%);
 	}
 }
 
-@keyframes hamburguesita-close {
+@keyframes nav-close {
 	0% {
+		opacity: 1;
+		visibility: visible;
 		transform: translateX(0%);
 	}
 
 	100% {
+		opacity: 1;
+		visibility: hidden;
 		transform: translateX(200%);
+	}
+}
+
+@keyframes popup-open {
+	0% {
+		opacity: 1;
+		visibility: hidden;
+		transform: translateX(-50%) translateY(200%);
+	}
+	100% {
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(-50%) translateY(0%);
+	}
+}
+
+@keyframes popup-closed {
+	0% {
+		opacity: 1;
+		visibility: visible;
+		transform: translate(-50%, 0%);
+	}
+	100% {
+		opacity: 1;
+		visibility: hidden; /* Moved visibility change to the start */
+		transform: translate(-50%, 200%);
 	}
 }
 
