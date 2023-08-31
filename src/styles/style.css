@@ -235,6 +235,14 @@ p {
 	font-size: calc(var(--f400) + 0.25rem);
 }
 
+.nav__menu a {
+	transition: color 0.3s ease; /* Add a transition for the color property */
+}
+
+.nav__menu a:hover {
+	color: var(--acc);
+}
+
 .nav__link {
 	color: var(--fg);
 	letter-spacing: 1.5px;
@@ -245,9 +253,7 @@ p {
 .main__landing-bg {
 	position: relative;
 	height: 100%;
-	z-index: -1;
 }
-/*Use img pseudoelement to apply a background to .main__landing-bg (wrapper)*/
 .main__landing-bg > img {
 	position: absolute;
 	top: 0;
