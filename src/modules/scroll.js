@@ -7,7 +7,7 @@ const sectionOneOptions = {
 	threshold: 0.9,
 }
 const hiddenOptions = {
-	threshold: 0.6,
+	threshold: 0.4,
 }
 
 const hiddenObserver = new IntersectionObserver((entries, hiddenObserver) => {

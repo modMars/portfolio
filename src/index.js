@@ -1,11 +1,6 @@
 // import './assets/alex512.png'
 import pdf from './assets/CV_Alejandro-Salcido.pdf'
-import './assets/alex600.webp'
-import './assets/calculator800.webp'
 import './assets/cv.svg'
-import './assets/library800.webp'
-import './assets/todo800.webp'
-import './assets/weather800.webp'
 import './modules/form.js'
 import './modules/scroll.js'
 import './styles/animations.css'
@@ -54,10 +49,9 @@ document.querySelectorAll('.nav__link').forEach(link => {
 	})
 })
 
-const cvBtn = document.querySelector('.cv')
-cvBtn.addEventListener('click', () => {
-	window.open(pdf)
+const cvBtn = document.querySelectorAll('.cv')
+cvBtn.forEach(e => {
+	e.addEventListener('click', () => {
+		window.open(pdf)
+	})
 })
-
-// const portraitImage = document.getElementById('portrait')
-// portraitImage.src = alexImage
