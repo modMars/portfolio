@@ -8,8 +8,8 @@
 	--fg2: #d9d9d9;
 	--bglight: #000000;
 	--bg: #2a2d43;
-	--bg2: #414361;
-	--bg3: #4e5175;
+	--bg2: #2a2d43;
+	--bg3: #353750;
 	--acc: #f61067;
 	--text: 'Roboto Slab', serif;
 	--subheader: 'Ubuntu Mono', monospace;
@@ -179,6 +179,7 @@ p {
 
 /*-Header Styles*/
 .header-wrapper {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -207,8 +208,8 @@ p {
 .nav__menu-hamburger {
 	justify-self: end;
 	align-self: center;
-	margin-right: 1.5em;
-	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
 	display: none;
 }
 
@@ -326,7 +327,6 @@ main {
 }
 
 .social {
-	font-size: calc(var(--f400) + 1rem);
 	transition: fill 0.2s ease;
 	padding: 1rem;
 }
