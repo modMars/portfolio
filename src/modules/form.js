@@ -5,10 +5,12 @@ const statusIcon = document.querySelector('.status-icon')
 
 form.addEventListener('submit', function (e) {
 	e.preventDefault()
+	const submitButton = form.querySelector('button[type="submit"]')
+	submitButton.disabled = true
+	submitButton.style.cursor = 'not-allowed'
 	const formData = new FormData(form)
 	const object = Object.fromEntries(formData)
 	const json = JSON.stringify(object)
-	// result.innerHTML = 'Please wait...'
 
 	fetch('https://api.web3forms.com/submit', {
 		method: 'POST',
@@ -38,6 +40,8 @@ form.addEventListener('submit', function (e) {
 		})
 		.then(function () {
 			form.reset()
+			submitButton.disabled = false
+			submitButton.style.cursor = 'pointer'
 			setTimeout(() => {
 				wrapper.className = 'popup-wrapper closed'
 			}, 3000)
