@@ -71,10 +71,11 @@ header {
 	top: 0;
 	z-index: 100;
 	transition: background-color opacity 0.25s;
+	padding: 0 5vw;
 }
 
 section {
-	padding: 10vh 0;
+	padding: 10vh 5vw;
 }
 
 #subheader {
@@ -82,6 +83,7 @@ section {
 	font-size: calc(var(--f500) + 0.5rem);
 	width: 100%;
 	margin: 0.5em 0;
+	letter-spacing: 3px;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -205,11 +207,14 @@ p {
 .nav__menu-hamburger {
 	justify-self: end;
 	align-self: center;
-	color: var(--fg);
-	font-size: 1.5rem;
 	margin-right: 1.5em;
 	padding: 5px;
 	display: none;
+}
+
+.fa-bars {
+	fill: var(--fg);
+	width: 1.5rem;
 }
 
 .nav__menu > li {
@@ -218,7 +223,7 @@ p {
 }
 
 .nav__menu a {
-	transition: color 0.3s ease; /* Add a transition for the color property */
+	transition: color 0.2s ease; /* Add a transition for the color property */
 }
 
 .nav__menu a:hover {
@@ -322,12 +327,12 @@ main {
 
 .social {
 	font-size: calc(var(--f400) + 1rem);
-	transition: color 0.2s ease;
+	transition: fill 0.2s ease;
 	padding: 1rem;
 }
 
-.social:hover {
-	color: var(--acc); /* Change color on hover */
+.social:hover svg {
+	fill: var(--acc);
 }
 
 .socials__container a:nth-child(1) {
@@ -347,8 +352,17 @@ main {
 	animation: popup-anim 0.4s ease 1.6s 1 forwards;
 }
 
+.social svg {
+	width: calc(var(--f400) + 1rem);
+	height: calc(var(--f400) + 1rem);
+	display: inline;
+	fill: var(--fg);
+	transition: fill 0.2s ease;
+}
+
 .cv > svg {
 	width: calc(var(--f400) + 1rem);
+	height: calc(var(--f400) + 1rem);
 }
 
 .cv > svg > path {
@@ -369,9 +383,10 @@ main {
 }
 
 #portrait {
-	width: 100%;
+	/* width: 100%;
 	min-width: 200px;
-	max-width: 500px;
+	max-width: 500px; */
+	width: 453px;
 	box-shadow: 0px 0px 10px var(--fg);
 	border-radius: 360px;
 	padding-left: 1px;
@@ -439,9 +454,14 @@ main {
 	gap: 2rem;
 }
 
-.tech-stack > * {
+.tech-stack > li > svg {
 	display: inline-block;
-	font-size: calc(var(--f600) + 1rem);
+	width: calc(var(--f600) + 1rem);
+}
+
+.tech-stack > li > svg > path,
+.tech-stack > li > svg > g {
+	fill: var(--fg);
 }
 
 /*-Projects*/
@@ -482,7 +502,7 @@ main {
 	-moz-box-shadow: 11px 11px 17px 0px rgba(0, 0, 0, 0.65);
 	background-color: var(--bg);
 	border-radius: 15px;
-	max-width: 735px;
+	max-width: 601px;
 	justify-self: center;
 	align-self: center;
 	overflow: hidden;
@@ -573,6 +593,7 @@ main {
 .card__info > h3 {
 	text-transform: uppercase;
 	margin-bottom: 1.2rem;
+	letter-spacing: 1px;
 	text-align: center;
 }
 
@@ -580,6 +601,7 @@ main {
 	text-align: center;
 	font-size: 0.9em;
 	margin: 0 auto;
+	letter-spacing: 0.5px;
 }
 
 .card__tags {
@@ -596,7 +618,7 @@ main {
 	background: var(--bg3);
 	font-weight: 600;
 	font-size: 0.8em;
-	opacity: 0.65;
+	opacity: 1;
 	padding: 0.2em 0.5em 0.3em;
 	margin: 0.4em 0.1em;
 	transition: filter 0.3s;
@@ -652,10 +674,11 @@ form {
 }
 
 label {
+	color: var(--bg);
 	display: block;
 	text-transform: uppercase;
 	font-family: var(--header);
-	opacity: 0.8;
+	opacity: 1;
 	padding: 0.5rem 0 0.25rem 0.5rem;
 }
 
@@ -823,7 +846,8 @@ footer {
 	}
 
 	#portrait {
-		max-width: 350px;
+		/* max-width: 350px; */
+		width: 250px;
 	}
 
 	.main__about-beyond,
@@ -995,5 +1019,10 @@ footer {
 
 	.nav__menu > li {
 		font-size: calc(var(--f500) + 0.25rem);
+	}
+
+	#portrait {
+		/* max-width: 350px; */
+		width: 200px;
 	}
 }
