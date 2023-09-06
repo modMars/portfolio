@@ -55,5 +55,3 @@ cvBtn.forEach(e => {
 		window.open(pdf)
 	})
 })
-
-console.log(document.querySelector('html').clientWidth)

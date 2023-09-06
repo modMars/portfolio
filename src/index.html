@@ -4,20 +4,28 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Alejandro Salcido's personal Web Portfolio." />
+		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'"
+		rel="preload"
+		as="style"
+		crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'">
 		<title>Portfolio</title>
 	</head>
-	<body>
-		<div class="main__landing-bg">
+	<body class="main__landing-bg">
 			<img
-				alt="Background image depicting a beautiful landscape with snowy mountains that are also a pinkish red color."
+				alt="Background depicting a beautiful landscape with snowy mountains that are also a pinkish red color."
 				src="./assets/bg800.webp"
 				srcset="./assets/bg400.webp 800w, ./assets/bg800.webp 1200w, ./assets/bg1400.webp"
 			/>
 			<header>
 				<div class="header-wrapper">
 					<h2 class="nav__logo">&lt;/mars></h2>
-					<a class="nav__menu-hamburger"
+					<a class="nav__menu-hamburger" aria-label="Toggle menu" role="button" title="Open menu" tabindex="0"
 						><svg
+							aria-hidden="true"
+							focusable="false"
 							class="fa-solid fa-bars"
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 448 512"
@@ -56,28 +64,28 @@
 							</p>
 							<div class="hero__interactables">
 								<div class="socials__container">
-									<a href="https://www.github.com/modMars" class="social"
-										><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="42px" height="42px">
+									<a href="https://www.github.com/modMars" class="social" aria-label="Visit Alejandro's Github" title="Github"
+										><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="42px" height="42px" aria-hidden="true" focusable="false">
 											<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
 											<path
 												d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
 											/></svg
 									></a>
-									<a href="https://www.linkedin.com/in/alejandrosalcido0/" class="social"
-										><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="42px" height="42px">
+									<a href="https://www.linkedin.com/in/alejandrosalcido0/" class="social" aria-label="Visit Alejandro's Linkedin" title="Linkedin"
+										><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="42px" height="42px" aria-hidden="true" focusable="false">
 											<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
 											<path
 												d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
 											/></svg
 									></a>
-									<a href="https://twitter.com/modMars_" class="social"
-										><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="42px" height="42px">
+									<a href="https://twitter.com/modMars_" class="social" aria-label="Visit Alejandro's Twitter" title="Twitter"
+										><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="42px" height="42px" aria-hidden="true" focusable="false">
 											<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
 											<path
 												d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
 											/></svg
 									></a>
-									<a class="cv social" href="">
+									<a class="cv social" href="#landing" aria-label="Download Resume as PDF" role="link" title="Download Resume">
 										<svg
 											version="1.1"
 											id="Capa_1"
@@ -90,6 +98,8 @@
 											xml:space="preserve"
 											width="42px"
 											height="42px"
+											aria-hidden="true" 
+											focusable="false"
 										>
 											<style type="text/css">
 												.st0 {
@@ -129,6 +139,8 @@
 							preserveAspectRatio="none"
 							width="42px"
 							height="42px"
+							aria-hidden="true" 
+							focusable="false"
 						>
 							<path
 								d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
@@ -177,16 +189,16 @@
 					<div class="main__about-stack wrapper">
 						<h3 class="about__header hidden">My tech stack<span class="dot">.</span></h3>
 						<ul class="tech-stack hidden">
-							<li>
-								<svg viewBox="0 0 128 128" width="77px" height="77px">
+							<li title="Python">
+								<svg viewBox="0 0 128 128" width="77px" height="77px" aria-hidden="true" focusable="false">
 									<path
 										fill="#FFD845"
 										d="M49.33 62h29.159C86.606 62 93 55.132 93 46.981V19.183c0-7.912-6.632-13.856-14.555-15.176-5.014-.835-10.195-1.215-15.187-1.191-4.99.023-9.612.448-13.805 1.191C37.098 6.188 35 10.758 35 19.183V30h29v4H23.776c-8.484 0-15.914 5.108-18.237 14.811-2.681 11.12-2.8 17.919 0 29.53C7.614 86.983 12.569 93 21.054 93H31V79.952C31 70.315 39.428 62 49.33 62zm-1.838-39.11c-3.026 0-5.478-2.479-5.478-5.545 0-3.079 2.451-5.581 5.478-5.581 3.015 0 5.479 2.502 5.479 5.581-.001 3.066-2.465 5.545-5.479 5.545zm74.789 25.921C120.183 40.363 116.178 34 107.682 34H97v12.981C97 57.031 88.206 65 78.489 65H49.33C41.342 65 35 72.326 35 80.326v27.8c0 7.91 6.745 12.564 14.462 14.834 9.242 2.717 17.994 3.208 29.051 0C85.862 120.831 93 116.549 93 108.126V97H64v-4h43.682c8.484 0 11.647-5.776 14.599-14.66 3.047-9.145 2.916-17.799 0-29.529zm-41.955 55.606c3.027 0 5.479 2.479 5.479 5.547 0 3.076-2.451 5.579-5.479 5.579-3.015 0-5.478-2.502-5.478-5.579 0-3.068 2.463-5.547 5.478-5.547z"
 									></path>
 								</svg>
 							</li>
-							<li>
-								<svg viewBox="0 0 128 128" width="77px" height="77px">
+							<li title="Bash">
+								<svg viewBox="0 0 128 128" width="77px" height="77px" aria-hidden="true" focusable="false">
 									>
 									<path fill="none" d="M-143.76 4.24h119.53v119.53h-119.53z"></path>
 									<path
@@ -195,8 +207,8 @@
 									></path>
 								</svg>
 							</li>
-							<li>
-								<svg viewBox="0 0 128 128" width="77px" height="77px">
+							<li title="HTML">
+								<svg viewBox="0 0 128 128" width="77px" height="77px" aria-hidden="true" focusable="false">
 									>
 									<path
 										fill="#E44D26"
@@ -204,8 +216,8 @@
 									></path>
 								</svg>
 							</li>
-							<li>
-								<svg viewBox="0 0 128 128" width="77px" height="77px">
+							<li title="CSS">
+								<svg viewBox="0 0 128 128" width="77px" height="77px" aria-hidden="true" focusable="false">
 									>
 									<path
 										fill="#1572B6"
@@ -213,8 +225,8 @@
 									></path>
 								</svg>
 							</li>
-							<li>
-								<svg viewBox="0 0 128 128" width="77px" height="77px">
+							<li title="Javascript">
+								<svg viewBox="0 0 128 128" width="77px" height="77px" aria-hidden="true" focusable="false">
 									>
 									<path
 										fill="#F0DB4F"
@@ -222,8 +234,8 @@
 									></path>
 								</svg>
 							</li>
-							<li>
-								<svg viewBox="0 0 128 128" width="77px" height="77px">
+							<li title="Webpack">
+								<svg viewBox="0 0 128 128" width="77px" height="77px" aria-hidden="true" focusable="false">
 									>
 									<g fill="#1c78c0">
 										<path
@@ -232,8 +244,8 @@
 									</g>
 								</svg>
 							</li>
-							<li>
-								<svg viewBox="0 0 128 128" width="77px" height="77px">
+							<li title="NPM">
+								<svg viewBox="0 0 128 128" width="77px" height="77px" aria-hidden="true" focusable="false">
 									>
 									<path
 										fill="#cb3837"
@@ -241,8 +253,8 @@
 									></path>
 								</svg>
 							</li>
-							<li>
-								<svg viewBox="0 0 128 128" width="77px" height="77px">
+							<li title="Git">
+								<svg viewBox="0 0 128 128" width="77px" height="77px" aria-hidden="true" focusable="false">
 									>
 									<path
 										fill="#F34F29"
@@ -250,8 +262,8 @@
 									></path>
 								</svg>
 							</li>
-							<li>
-								<svg viewBox="0 0 128 128" width="77px" height="77px">
+							<li title="Jest">
+								<svg viewBox="0 0 128 128" width="77px" height="77px" aria-hidden="true" focusable="false">
 									>
 									<path
 										fill="#99425B"
@@ -271,6 +283,8 @@
 							preserveAspectRatio="none"
 							width="42px"
 							height="42px"
+							aria-hidden="true" 
+							focusable="false"
 						>
 							<path
 								d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
@@ -281,22 +295,25 @@
 					<h2 id="subheader">PROJECTS</h2>
 					<div class="main__projects-wrapper wrapper">
 						<div class="main__projects-display">
-							<div class="card hidden">
+							<div class="card hidden" tabindex="0">
 								<div class="overlay hidden">
 									<div class="content hidden">
-										<a href="https://modmars.github.io/Library/" target="_blank"
-											><button class="btn live">LIVE</button></a
-										>
-										<a href="https://github.com/modMars/Library" target="_blank"
-											><button class="btn repo">REPO</button></a
-										>
+											<a href="https://modmars.github.io/Library/" target="_blank" class="live" role="link" aria-label="Live version of Library project">
+													<span class="btn live" aria-hidden="true">LIVE</span>
+											</a>
+											<a href="https://github.com/modMars/Library" target="_blank" class="repo" role="link" aria-label="GitHub repository for Library project">
+													<span class="btn repo" aria-hidden="true">REPO</span>
+											</a>
 									</div>
 								</div>
 								<img
+									width="601"
+									height="401"
 									src="./assets/library600.webp"
 									srcset="./assets/library400.webp 400w, ./assets/library600.webp"
 									alt="Screenshot of Library of Kos, a digital Library created using HTML, CSS and JavaScript. The image displays a teal colored UI and a few cards with the option to add new book cards."
 									class="card__image"
+									loading="lazy"
 								/>
 								<div class="card__info">
 									<h3>Library of Kos</h3>
@@ -310,22 +327,25 @@
 									</div>
 								</div>
 							</div>
-							<div class="card hidden">
+							<div class="card hidden"tabindex="0">
 								<div class="overlay hidden">
 									<div class="content hidden">
-										<a href="https://modmars.github.io/WeatherStorm/" target="_blank"
-											><button class="btn live">LIVE</button></a
-										>
-										<a href="https://github.com/modMars/WeatherStorm" target="_blank"
-											><button class="btn repo">REPO</button></a
-										>
+											<a href="https://modmars.github.io/WeatherStorm/" target="_blank" tabindex="0" class="live" role="link" aria-label="Live version of WeatherStorm project">
+													<span class="btn live" aria-hidden="true">LIVE</span>
+											</a>
+											<a href="https://github.com/modMars/WeatherStorm" target="_blank" tabindex="0" class="repo" role="link" aria-label="GitHub repository for WeatherStorm project">
+													<span class="btn repo" aria-hidden="true">REPO</span>
+											</a>
 									</div>
 								</div>
 								<img
+									width="601"
+									height="401"
 									src="./assets/weather600.webp"
 									srcset="./assets/weather400.webp 400w, ./assets/weather600.webp"
 									alt="Screenshot of WeatherStorm, a web weather forecast app created using HTML, CSS and JavaScript. The image displays an input for location, a few forecast cards and a background of a forest with some clouds on top of it."
 									class="card__image"
+									loading="lazy"
 								/>
 								<div class="card__info">
 									<h3>WeatherStorm</h3>
@@ -339,22 +359,26 @@
 									</div>
 								</div>
 							</div>
-							<div class="card hidden">
+							<div class="card hidden" tabindex="0" aria-label="Todo List card">
 								<div class="overlay hidden">
 									<div class="content hidden">
-										<a href="https://modmars.github.io/TodoList-App/" target="_blank"
-											><button class="btn live">LIVE</button></a
-										>
-										<a href="https://github.com/modMars/TodoList-App" target="_blank"
-											><button class="btn repo">REPO</button></a
-										>
+											<a href="https://modmars.github.io/TodoList-App/" target="_blank" tabindex="0" class="live" role="link" aria-label="Live version of TodoList App project">
+													<span class="btn live" aria-hidden="true">LIVE</span>
+											</a>
+											<a href="https://github.com/modMars/TodoList-App" target="_blank" tabindex="0" class="repo" role="link" aria-label="GitHub repository for TodoList App project">
+													<span class="btn repo" aria-hidden="true">REPO</span>
+											</a>
 									</div>
-								</div>
+							</div>
+							
 								<img
+									width="601"
+									height="401"
 									src="./assets/todo600.webp"
 									srcset="./assets/todo400.webp 400w, ./assets/todo600.webp"
 									alt="Screenshot of To-Do List App, a digital task management system created using HTML, CSS and JavaScript. The image displays a dark colored UI and a small list of school related tasks."
 									class="card__image"
+									loading="lazy"
 								/>
 								<div class="card__info">
 									<h3>To-do list app</h3>
@@ -368,22 +392,26 @@
 									</div>
 								</div>
 							</div>
-							<div class="card hidden">
+							<div class="card hidden" tabindex="0">
 								<div class="overlay hidden">
 									<div class="content hidden">
-										<a href="https://modmars.github.io/Calculator/" target="_blank"
-											><button class="btn live">LIVE</button></a
-										>
-										<a href="https://github.com/modMars/Calculator" target="_blank"
-											><button class="btn repo">REPO</button></a
-										>
+											<a href="https://modmars.github.io/Calculator/" target="_blank" tabindex="0" class="live" role="link" aria-label="Live version of Calculator project">
+													<span class="btn live" aria-hidden="true">LIVE</span>
+											</a>
+											<a href="https://github.com/modMars/Calculator" target="_blank" tabindex="0" class="repo" role="link" aria-label="GitHub repository for Calculator project">
+													<span class="btn repo" aria-hidden="true">REPO</span>
+											</a>
 									</div>
-								</div>
+							</div>
+							
 								<img
+									width="601"
+									height="401"
 									src="./assets/calculator600.webp"
 									srcset="./assets/calculator400.webp 400w, ./assets/calculator600.webp"
 									alt="Screenshot of Calculator, a web calculator project created using HTML, CSS and JavaScript. The image displays a dark colored UI where a digital calculator is the focus, it features clear, backspace, division, substraction and addition functions"
 									class="card__image"
+									loading="lazy"
 								/>
 								<div class="card__info">
 									<h3>Calculator</h3>
@@ -413,18 +441,18 @@
 					</div>
 					<h2 id="subheader">CONTACT</h2>
 					<div class="form-container">
-						<form data-netlify="true" action="https://api.web3forms.com/submit" method="POST" id="form">
+						<form action="https://api.web3forms.com/submit" method="POST" id="form">
 							<input type="hidden" name="access_key" value="9abc3ac6-5e87-4e35-9636-8e75a411c7b4" />
 							<input type="hidden" name="from_name" value="Portfolio contact" />
 							<input type="checkbox" name="botcheck" id="" style="display: none" />
 							<div class="input-wrapper">
-								<label for="name">Name* <input type="text" name="name" placeholder="" required /></label>
+								<label>Name* <input type="text" name="name" placeholder="" required /></label>
 							</div>
 							<div class="input-wrapper">
-								<label for="email">E-mail* <input type="email" name="email" placeholder="" required /></label>
+								<label>E-mail* <input type="email" name="email" placeholder="" required /></label>
 							</div>
 							<div class="textarea-wrapper">
-								<label for="message">Message* <textarea name="message" placeholder="" required></textarea></label>
+								<label>Message* <textarea name="message" placeholder="" required></textarea></label>
 							</div>
 							<button type="submit">Submit</button>
 							<div class="popup-wrapper">
@@ -440,28 +468,28 @@
 			</main>
 			<footer>
 				<div class="footer-wrapper">
-					<a href="https://www.github.com/modMars" class="social"
-						><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+					<a href="https://www.github.com/modMars" class="social" aria-label="Visit Alejandro's Github" title="Github"
+						><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" aria-hidden="true" focusable="false">
 							<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
 							<path
 								d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
 							/></svg
 					></a>
-					<a href="https://www.linkedin.com/in/alejandrosalcido0/" class="social"
-						><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+					<a href="https://www.linkedin.com/in/alejandrosalcido0/" class="social" aria-label="Visit Alejandro's Linkedin" title="Linkedin"
+						><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
 							<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
 							<path
 								d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
 							/></svg
 					></a>
-					<a href="https://twitter.com/modMars_" class="social"
-						><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+					<a href="https://twitter.com/modMars_" class="social" aria-label="Visit Alejandro's Twitter" title="Twitter"
+						><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
 							<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
 							<path
 								d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
 							/></svg
 					></a>
-					<a class="cv social" href="">
+					<a class="cv social" href="#landing" aria-label="Download Resume as PDF" role="link" title="Download Resume">
 						<svg
 							version="1.1"
 							id="Capa_1"
@@ -474,6 +502,8 @@
 							xml:space="preserve"
 							width="42px"
 							height="42px"
+							aria-hidden="true"
+							focusable="false"
 						>
 							<style type="text/css">
 								.st0 {
@@ -492,6 +522,5 @@
 					</a>
 				</div>
 			</footer>
-		</div>
 	</body>
 </html>
