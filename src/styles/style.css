@@ -247,9 +247,11 @@ p {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 110svh;
+	height: 145svh;
 	object-fit: cover;
-	filter: blur(5px);
+	/* object-position: 50% 50%; */
+	filter: blur(7px);
+	opacity: 0.6;
 }
 
 main {
@@ -265,7 +267,7 @@ main {
 	/* margin-bottom: 10em; */
 	display: inline-block;
 	/* padding: 2rem; */
-	margin: 0% 5% 10% 5%;
+	margin: 0% 5% 8rem 0%;
 }
 
 .hero-text {
@@ -275,11 +277,11 @@ main {
 	white-space: wrap;
 	overflow: hidden;
 	letter-spacing: -1px;
+	word-spacing: -20px;
 	font-family: 'Space Mono', monospace;
 	font-weight: 500;
 	width: 100%;
 	max-width: 20ch;
-	letter-spacing: 5px;
 	line-height: 1.2;
 	margin: 0.5em 0em;
 	animation: popup-anim 0.5s ease 0.5s 1 forwards;
@@ -287,8 +289,16 @@ main {
 
 #Alejandro {
 	color: var(--acc);
-	font-style: italic;
-	letter-spacing: -1px;
+	/* font-style: italic; */
+	letter-spacing: -3px;
+}
+
+.main__hero-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1250px;
 }
 
 .main__landing {
@@ -296,15 +306,15 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	flex-direction: row;
 	background-position: center;
 	padding: 0;
 	min-height: 98vh;
 	min-height: 98svh;
+	padding: 0vh 5vw;
 }
 
 .hero-subtext {
-	max-width: 46ch;
+	max-width: 40ch;
 	line-height: 1.5em;
 	letter-spacing: 1.5px;
 	opacity: 0;
@@ -386,7 +396,7 @@ main {
 	/* width: 100%;
 	min-width: 200px;
 	max-width: 500px; */
-	width: 453px;
+	width: 440px;
 	box-shadow: 0px 0px 10px var(--fg);
 	border-radius: 360px;
 	padding-left: 1px;
@@ -719,15 +729,15 @@ button[type='submit'] {
 	margin: 2rem 0 0 auto;
 	padding: 0.6rem 2rem;
 	color: var(--fg);
-	background-color: var(--acc);
-	border: 1px solid var(--acc);
+	background-color: var(--bg);
+	border: 1px solid var(--bg);
 	border-radius: 5px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 }
 
 button[type='submit']:hover {
-	color: var(--acc);
+	color: var(--bg);
 	background-color: transparent;
 }
 
@@ -837,7 +847,8 @@ footer {
 	}
 
 	.wrapper,
-	.header-wrapper {
+	.header-wrapper,
+	.main__hero-container {
 		max-width: 724px;
 	}
 
@@ -941,18 +952,18 @@ footer {
 		--f600: calc(3.93rem * 0.75);
 	}
 
-	.main__landing {
+	.main__hero-container {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
 
-	.main__hero-wrapper {
+	/* .main__hero-container {
 		margin: 0;
 		padding: 1rem;
 		margin-bottom: 1rem;
 		margin-top: 3rem;
-	}
+	} */
 
 	.hero-text,
 	.hero-subtext {
