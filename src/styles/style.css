@@ -192,8 +192,12 @@ p {
 	font-variant-ligatures: none;
 	font-family: var(--subheader);
 	font-size: var(--f500);
-	letter-spacing: -0.5px;
+	letter-spacing: 1px;
 	margin: 0;
+}
+
+.html {
+	margin-right: 4px;
 }
 
 .nav__menu {
