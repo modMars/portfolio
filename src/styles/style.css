@@ -218,6 +218,7 @@ p {
 .fa-bars {
 	fill: var(--fg);
 	width: 1.5rem;
+	pointer-events: none;
 }
 
 .nav__menu > li {
@@ -387,6 +388,7 @@ main {
 }
 
 .landing__img-container {
+	aspect-ratio: auto 500/518;
 	padding: 3rem;
 	margin-bottom: 5rem;
 	border-radius: 380px;
@@ -394,12 +396,10 @@ main {
 	animation: popup-anim 0.7s ease 1.7s 1 forwards;
 }
 
-#portrait {
-	/* width: 100%;
-	min-width: 200px;
-	max-width: 500px; */
+.portrait {
 	aspect-ratio: auto 500/518;
-	width: 440px;
+	display: block;
+	width: 100%;
 	height: auto;
 	box-shadow: 0px 0px 10px var(--fg);
 	border-radius: 360px;
@@ -708,7 +708,7 @@ form {
 	flex-direction: column;
 	color: var(--bg);
 	padding: 2em;
-	margin: 2rem 0 5rem 0;
+	margin: 2rem 0 2rem 0;
 	border-radius: 10px;
 }
 
@@ -840,6 +840,40 @@ input::placeholder {
 	transform: translate(-50%, -33%);
 }
 
+.main__contact-alternative {
+	font-size: calc(var(--f400) + 0.25rem);
+	font-family: var(--text);
+	margin-bottom: 5rem;
+}
+
+.or {
+	opacity: 0.8;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.main__contact-alternative > h3 {
+	opacity: 0.8;
+	margin-bottom: 1rem;
+}
+
+.main__contact-alternative > p {
+	text-align: center;
+	font-family: var(--text);
+}
+
+.main__contact-alternative > a {
+	color: var(--bg);
+	text-align: center;
+	display: block;
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.main__contact-alternative > a:hover {
+	font-weight: bold;
+}
+
 /*-Footer*/
 footer {
 	background-color: var(--bg3);
@@ -885,7 +919,7 @@ footer {
 		padding: 0.5em;
 	}
 
-	#portrait {
+	.portrait {
 		/* max-width: 350px; */
 		width: 250px;
 		height: auto;
@@ -1024,7 +1058,7 @@ footer {
 		margin: 0px;
 	}
 
-	#portrait {
+	.portrait {
 		max-width: 300px;
 		height: auto;
 	}
@@ -1063,7 +1097,7 @@ footer {
 		font-size: calc(var(--f500) + 0.25rem);
 	}
 
-	#portrait {
+	.portrait {
 		/* max-width: 350px; */
 		width: 200px;
 		height: auto;

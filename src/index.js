@@ -7,8 +7,9 @@ import './styles/animations.css'
 import './styles/normalize.css'
 import './styles/style.css'
 
-const menu = document.querySelector('.fa-bars')
+const menu = document.querySelector('.nav__menu-hamburger')
 const navMenu = document.querySelector('.nav__menu')
+
 menu.addEventListener('click', e => {
 	e.preventDefault()
 	if (navMenu.classList.contains('enabled')) {
@@ -20,8 +21,36 @@ menu.addEventListener('click', e => {
 	}
 })
 
+menu.addEventListener('keypress', e => {
+	if (e.key === 'Enter') {
+		if (navMenu.classList.contains('enabled')) {
+			navMenu.classList.remove('enabled')
+			navMenu.classList.add('closed')
+		} else {
+			navMenu.classList.add('enabled')
+			navMenu.classList.remove('closed')
+		}
+	}
+})
+
 document.addEventListener('click', e => {
 	if (e.target !== navMenu && e.target !== menu) {
+		if (navMenu.classList.contains('enabled')) {
+			navMenu.classList.remove('enabled')
+			navMenu.classList.add('closed')
+		}
+	}
+})
+
+navMenu.addEventListener('focusout', e => {
+	if (!navMenu.contains(e.relatedTarget)) {
+		navMenu.classList.remove('enabled')
+		navMenu.classList.add('closed')
+	}
+})
+
+document.addEventListener('keydown', e => {
+	if (e.key === 'Escape') {
 		if (navMenu.classList.contains('enabled')) {
 			navMenu.classList.remove('enabled')
 			navMenu.classList.add('closed')
@@ -43,8 +72,8 @@ document.querySelectorAll('.nav__link').forEach(link => {
 			navMenu.classList.remove('enabled')
 			navMenu.classList.add('closed')
 		}
-		event.preventDefault()
-		const target = event.target.getAttribute('href')
+		e.preventDefault()
+		const target = e.target.getAttribute('href')
 		smoothScroll(target)
 	})
 })
