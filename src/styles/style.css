@@ -553,8 +553,8 @@ main {
 
 .content > a {
 	/* padding: 0.5rem 2rem; */
-	width: 110px;
-	min-height: 40px;
+	width: 6.875rem;
+	min-height: 2.5rem;
 }
 
 .btn {
@@ -567,7 +567,7 @@ main {
 	/* margin: 10px 10px; */
 	letter-spacing: 2px;
 	border-radius: 5px;
-	font-size: calc(var(--f500)+0.25rem);
+	font-size: calc(var(--f400) + 0.25rem);
 	font-family: var(--subheader);
 	color: var(--fg);
 	font-weight: 700;
