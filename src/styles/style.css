@@ -427,12 +427,10 @@ main {
 .about__header {
 	margin-bottom: 2rem;
 }
-/* .main__about-beyond {
-	background-image: url(../assets/blob.svg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	object-fit: center;
-} */
+
+.techHeader {
+	margin-bottom: 4rem;
+}
 
 .main__about-beyond,
 .main__about-journey,
@@ -471,18 +469,6 @@ main {
 .tech-stack > li > svg {
 	display: inline-block;
 	width: calc(var(--f600) + 1rem);
-}
-
-/*TODO Toggle tech-stack hover*/
-.tech-stack > li > svg > path,
-.tech-stack > li > svg > g {
-	fill: var(--fg);
-	/* transition: fill 0.2s ease; */
-}
-
-.tech-stack > li:hover svg > path,
-.tech-stack > li:hover svg > g {
-	/* fill: var(--acc); */
 }
 
 /*-Projects*/
